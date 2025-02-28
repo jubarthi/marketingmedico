@@ -1,5 +1,3 @@
-/* Importação da fonte já realizada no index.html */
-
 /* Reset básico */
 * {
   margin: 0;
@@ -9,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0d1b2a; /* Fundo azul bem escuro */
+  background: linear-gradient(to bottom, #0d1b2a, #000); /* Degradê do azul escuro para o preto */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +23,19 @@ body {
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Logo centralizado no topo */
+.logo {
+  width: 60px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
 /* Etapas do formulário */
 .step {
   display: none;
-  text-align: center;
 }
 .step.active {
   display: block;
@@ -43,7 +48,7 @@ h1, h2 {
   font-weight: 700;
 }
 h1 {
-  font-size: 2.2em; /* Títulos maiores */
+  font-size: 2.2em;
 }
 h2 {
   font-size: 1.6em;
@@ -114,9 +119,9 @@ button:active {
   box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
 }
 
-/* Botões padrão: vermelho com pulsação */
+/* Botões padrão: vermelho com efeito pulsante */
 .next-button, .prev-button {
-  background-color: #e74c3c; /* Vermelho */
+  background-color: #e74c3c;
   color: #fff;
   box-shadow: 0 0 10px rgba(231, 76, 60, 0.6);
   animation: pulse 2s infinite;
@@ -127,7 +132,7 @@ button:active {
 
 /* Botão final: maior, verde, florescente e pulsante rápido */
 #finalSubmit {
-  background-color: #27ae60; /* Verde */
+  background-color: #27ae60;
   color: #fff;
   font-size: 1.1em;
   padding: 15px 25px;
