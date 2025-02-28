@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captura de Leads - Serviço de Saúde</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="container">
+  <!-- Etapa 1: Boas-vindas -->
+  <div class="step active" id="step1">
+    <h1>Bem-vindo!</h1>
+    <p>Conheça nosso serviço que auxilia profissionais de saúde a otimizar a gestão de suas clínicas. Informe seus dados nas próximas etapas para que possamos entrar em contato.</p>
+    <button type="button" class="next-button">Começar</button>
+  </div>
+
+  <!-- Etapa 2: E-mail -->
+  <div class="step" id="step2">
+    <p class="step-count">Passo 1 de 6</p>
+    <h2>Qual é o seu e-mail?</h2>
+    <input type="email" id="email" placeholder="Seu e-mail" required />
+    <div class="buttons">
+      <button type="button" class="prev-button">Voltar</button>
+      <button type="button" class="next-button">Próximo</button>
+    </div>
+  </div>
+
+  <!-- Etapa 3: Nome e Sobrenome -->
+  <div class="step" id="step3">
+    <p class="step-count">Passo 2 de 6</p>
+    <h2>Qual é o seu nome e sobrenome?</h2>
+    <div class="field-group">
+      <input type="text" id="firstName" placeholder="Nome" required />
+      <input type="text" id="lastName" placeholder="Sobrenome" required />
+    </div>
+    <div class="buttons">
+      <button type="button" class="prev-button">Voltar</button>
+      <button type="button" class="next-button">Próximo</button>
+    </div>
+  </div>
+
+  <!-- Etapa 4: Telefone (WhatsApp) -->
+  <div class="step" id="step4">
+    <p class="step-count">Passo 3 de 6</p>
+    <h2>Qual é o seu número de WhatsApp?</h2>
+    <input type="tel" id="phone" placeholder="(DDD) 9XXXX-XXXX" required />
+    <div class="buttons">
+      <button type="button" class="prev-button">Voltar</button>
+      <button type="button" class="next-button">Próximo</button>
+    </div>
+  </div>
+
+  <!-- Etapa 5: Especialidade Médica -->
+  <div class="step" id="step5">
+    <p class="step-count">Passo 4 de 6</p>
+    <h2>Qual é a sua especialidade médica?</h2>
+    <input type="text" id="specialty" placeholder="Ex: Cardiologia" required />
+    <div class="buttons">
+      <button type="button" class="prev-button">Voltar</button>
+      <button type="button" class="next-button">Próximo</button>
+    </div>
+  </div>
+
+  <!-- Etapa 6: Função no setor de saúde -->
+  <div class="step" id="step6">
+    <p class="step-count">Passo 5 de 6</p>
+    <h2>Qual é a sua função no setor de saúde?</h2>
+    <select id="role" required>
+      <option value="" disabled selected>Selecione sua função</option>
+      <option value="Médico(a)">Médico(a)</option>
+      <option value="Enfermeiro(a)/Técnico(a) de Enfermagem">Enfermeiro(a)/Técnico(a) de Enfermagem</option>
+      <option value="Gestor(a)/Administrador(a)">Gestor(a)/Administrador(a)</option>
+      <option value="Estudante/Residente">Estudante/Residente</option>
+      <option value="Outro profissional de saúde">Outro profissional de saúde</option>
+    </select>
+    <div class="buttons">
+      <button type="button" class="prev-button">Voltar</button>
+      <button type="button" class="next-button">Próximo</button>
+    </div>
+  </div>
+
+  <!-- Etapa 7: Faixa de faturamento mensal -->
+  <div class="step" id="step7">
+    <p class="step-count">Passo 6 de 6</p>
+    <h2>Qual é a sua faixa de faturamento mensal?</h2>
+    <select id="billing" required>
+      <option value="" disabled selected>Selecione uma faixa</option>
+      <option value="Até R$ 20 mil">Até R$ 20 mil</option>
+      <option value="R$ 20 mil - R$ 50 mil">R$ 20 mil - R$ 50 mil</option>
+      <option value="R$ 50 mil - R$ 100 mil">R$ 50 mil - R$ 100 mil</option>
+      <option value="Acima de R$ 100 mil">Acima de R$ 100 mil</option>
+    </select>
+    <div class="buttons">
+      <button type="button" class="prev-button">Voltar</button>
+      <!-- Botão final: maior, verde, florescente e pulsante rápido -->
+      <button type="button" class="next-button" id="finalSubmit">CONSULTA COM ESPECIALISTA</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
