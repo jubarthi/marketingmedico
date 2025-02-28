@@ -96,7 +96,6 @@ function sendData() {
   const billing = document.getElementById('billing').value;
   const fullName = firstName + " " + lastName;
 
-  // Primeira linha alterada conforme solicitado
   let message = "Quero mudar agora!\n";
   message += "Nome: " + fullName + "\n";
   message += "E-mail: " + email + "\n";
